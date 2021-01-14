@@ -5,5 +5,29 @@
 # Visuals
 * Login Page
 ![Login Page](/images/login.png)
+
+* SignUp Page
+![SignUp Page](/images/SignUp.png)
+
+* Home Page
+![Home Page](/images/home.png)
+
+* ADD page
+![Add Page](/images/ADD.png)
+
+* Make Movement Page
+![Make Movement Page](/images/move.png)
+
+* View Product Page
+![View Product Page](/images/viewproduct.png)
+
+* View Location Page
+![View Location Page](/images/viewlocation.png)
+
+* View Movement Page
+![View Movement Page](/images/viewMovement.png)
+
+* View Report Page
+![View Report Page](/images/viewReport.png)
  
  
