@@ -7,20 +7,20 @@
 <img src="images/login.png" width="500">
 <br>
 * SignUp Page<br>
-<img src="SignUp/login.png" width="500">
-* Home Page
-![Home Page](/images/Home.png)
-* ADD page
-![Add Page](/images/ADD.png)
-* Make Movement Page
-![Make Movement Page](/images/move.png)
-* View Product Page
-![View Product Page](/images/viewp.png)
-* View Location Page
-![View Location Page](/images/viewl.png)
-* View Movement Page
-![View Movement Page](/images/viewm.png)
-* View Report Page
-![View Report Page](/images/viewr.png)
+<img src="images/SignUp.png" width="500"><br>
+* Home Page<br>
+<img src="images/Home.png" width="500"><br>
+* ADD page<br>
+<img src="images/ADD.png" width="500"><br>
+* Make Movement Page<br>
+<img src="images/move.png" width="500"><br>
+* View Product Page<br>
+<img src="images/viewp.png" width="500"><br>
+* View Location Page<br>
+<img src="images/viewl.png" width="500"><br>
+* View Movement Page<br>
+<img src="images/viewm.png" width="500"><br>
+* View Report Page<br>
+<img src="images/viewr.png" width="500"><br>
  
  
