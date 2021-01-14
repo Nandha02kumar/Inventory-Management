@@ -16,7 +16,7 @@
 * View Product Page
 ![View Product Page](/images/View product.png)
 * View Location Page
-![View Location Page](/images/View location.png)
+![View Location Page](/images/viewl.png)
 * View Movement Page
 ![View Movement Page](/images/View Movement.png)
 * View Report Page
