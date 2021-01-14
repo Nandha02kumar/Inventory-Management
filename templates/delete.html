@@ -1,0 +1,30 @@
+{% extends "login.html" %}
+{% block content%}
+<form method="POST" action='/delete'>
+    <table class="table weight">
+    <tr>
+      <td>Product_ID</td>
+      <td><input type="text" name="product_id" required></td>
+    </tr>
+    <tr>
+       <td>Product_Name</td>
+       <td><input type="text" name="product_name" required></td>
+    </tr>
+         
+     <tr>
+        <td>Location_ID</td>
+        <td><input type="text" name="location_id" required></td>
+     </tr>
+     <tr>
+        <td>Location_Name</td>
+        <td><input type="text" name="location_name" required></td>
+     </tr>
+      </table>
+      <div>
+          <button class="btn btn-primary">Delete</button>
+          <a class="btn btn-primary" href="{{url_for('first')}}">Back</a>
+         
+      </div>
+    
+    </form>
+    {% endblock content%}

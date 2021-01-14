@@ -1,0 +1,52 @@
+{% extends "login.html" %}
+{% block content%}
+<form method="POST" action='/movement'>
+<table class="table weight">
+   <tr>
+      <td>
+         Product IN/OUT/WAREHOUSE CHANGE
+      </td>
+      <td>
+         <input type="radio" name="status" value="in" checked> Product IN<br>
+         <input type="radio" name="status" value="out"> Product OUT<br>
+         <input type="radio" name="status" value="replace"> Product WAREHOUSE CHANGE<br>
+      </td>
+   </tr>
+    <tr>
+      <td>Product_ID</td>
+      <td><input type="text" name="product_id" required ></td>
+    </tr>
+    <tr>
+       <td>Product_Name</td>
+       <td><input type="text" name="product_name" required></td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td><input type="text" name="quantity" required></td>
+    </tr>
+    <tr>
+      <td>From_Location_ID</td>
+      <td><input type="text" name="flocation_id" required></td>
+   </tr>
+     <tr>
+        <td>From_Location_Name</td>
+        <td><input type="text" name="flocation" required></td>
+     </tr>
+     <tr>
+      <td>To_Location_ID</td>
+      <td><input type="text" name="tlocation_id" required></td>
+   </tr>
+     <tr>
+        <td>To_Location_Name</td>
+        <td><input type="text" name="tlocation" required></td>
+     </tr>
+
+      </table>
+      <div>
+          <button class="btn btn-primary">Save</button>
+          <a class="btn btn-primary" href="{{url_for('first')}}">Back</a>
+         
+      </div>
+    
+    </form>
+    {% endblock content%}

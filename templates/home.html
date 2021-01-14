@@ -1,0 +1,25 @@
+{% extends "login.html" %}
+{% block content %}
+<form method='POST' action='/login'>
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+<legend class="border-bottom">Login</legend>
+   <div class="form-group">
+       {{form.username.label(class="form-control-label")}}<br>
+       {{form.username(class="input")}}<br><br>
+   </div>
+   <div class="form-group">
+    {{form.password.label(class="form-control-label")}}<br>
+    {{form.password(class="input")}}<br><br>
+</div>
+    </fieldset>
+    <div>
+    <div>
+    {{form.submit(class="btn btn-primary")}}<br><br></div>
+    <div>
+       <small class="text-muted" id="sign1"><span>Create Account? </span><span ><a  class="upcolor" href="{{url_for('signup')}}">Sign Up</a></span></small>
+    </div>
+</div>
+
+</form>
+{% endblock content %}
