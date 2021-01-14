@@ -4,10 +4,10 @@
    This is a web application create by using Flask Framework.It helps to Maintain your inventory effectively & efficiently. Get reports on inventory inward and outward movements and make profitable decisions.
 # Visuals
 * Login Page
-<img src="images/login.png" width="200">
-
-* SignUp Page
-![SignUp Page](/images/SignUp.png)/
+<img src="images/login.png" width="500">
+<br>
+* SignUp Page<br>
+<img src="SignUp/login.png" width="500">
 * Home Page
 ![Home Page](/images/Home.png)
 * ADD page
