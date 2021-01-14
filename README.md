@@ -8,7 +8,7 @@
 * SignUp Page
 ![SignUp Page](/images/SignUp.png)/
 * Home Page
-![Home Page](/images/home.png)
+![Home Page](/images/Home.png)
 * ADD page
 ![Add Page](/images/ADD.png)
 * Make Movement Page
