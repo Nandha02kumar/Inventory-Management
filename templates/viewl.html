@@ -1,0 +1,81 @@
+{% extends "login.html" %}
+{% block content%}
+<form method="POST" action='/viewl'>
+<table>
+    <tr>
+        <td>
+            PRODUCT_ID
+        </td>
+        <TD>
+            <input type="text" name="product_id" required>
+        </TD>
+    </tr>
+    <tr>
+        <td>
+            PRODUCT_NAME
+        </td>
+        <TD>
+            <input type="text" name="product_name" required>
+        </TD>
+    </tr>
+</table>
+<button class="btn btn-primary">Search</button>
+</form>
+{% if(message)%}
+<div class="container"><h3>{{message}}</h3></div>
+{% else %}
+ {% if (error) %}
+  <div><h1>{{error}}</h1></div>
+ {% else %}
+<table class="table color">
+    <th>
+        PRODUCT_ID
+    </th>
+    <th>
+        PRODUCT_NAME
+    </th>
+    <th>
+        LOCATION_ID
+    </th>
+    <th>
+        LOCATION_NAME
+    </th>
+    <th>
+        QUANTITY
+    </th>
+    {% for i in range(0,1)%}
+       <tr>
+           <td>
+               {{product_id}}
+           </td>
+           <td>
+            {{product_name}}
+           </td>
+           <td>
+           {%for j in li1%}
+                        <div>{{j}}</div>
+                        <hr>
+           {%endfor%}
+           </td>
+           <td>
+           {%for j in li2%}
+                    <div>{{j}}</div>
+                    <hr>
+           {%endfor%}
+           </td>
+           <td>
+           {%for j in li3%}
+           
+                        <div>{{j}}</div>
+                        <hr>
+                   
+           {%endfor%}
+           </td>
+       </tr>
+       {%endfor%}
+
+</table>
+{%endif%}
+{%endif%}
+<div ><a class="btn btn-primary" href="{{url_for('first')}}">Back</a></div>
+{% endblock %}

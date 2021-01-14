@@ -1,0 +1,34 @@
+{% extends "login.html" %}
+{% block content%}
+
+{% if(message)%}
+<div class="container"><h3>{{message}}</h3></div>
+{% else %}
+<table class="table color">
+    <th>
+        PRODUCT_ID
+    </th>
+    <th>
+        PRODUCT_NAME
+    </th>
+    <th>
+        QUANTITY
+    </th>
+        {% for i in range(0,len)%}
+    <tr>
+           <td>
+               {{data[i][1]}}
+           </td>
+           <td>
+            {{data[i][2]}}
+           </td>
+           <td>
+            {{data[i][3]}}
+           </td>
+    </tr>
+       {%endfor%}
+</table>
+{%endif%}
+<div ><a class="btn btn-primary " href="{{url_for('first')}}">Back</a></div>
+
+{% endblock %}

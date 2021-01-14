@@ -1,0 +1,96 @@
+{% extends "login.html" %}
+{%block content %}
+
+<form method='POST' action=''>
+    {{ form.hidden_tag() }}
+    <fieldset class="form-group">
+<legend class="border-bottom">Sign Up</legend>
+<div class="form-group">
+    {{form.companyname.label(class="form-control-label")}}<br>
+       {% if form.companyname.errors %}
+       {%for error in form.companyname.errors%}
+       {{form.companyname(class="is-invalid input")}}
+       <div class="invalid-feedback">
+           <div>{{error}}</div><br>
+       </div>
+       {% endfor %}
+       {% else %}
+       {{form.companyname(class="input")}}<br><br>
+       {%endif%}
+   <div class="form-group">
+    {{form.username.label(class="form-control-label")}}<br>
+       {% if form.username.errors %}
+       {%for error in form.username.errors%}
+       {{form.username(class="is-invalid input")}}
+       <div class="invalid-feedback">
+           <div>{{error}}</div><br>
+       </div>
+       {% endfor %}
+       {% else %}
+       {{form.username(class="input")}}<br><br>
+       {%endif%}
+   </div>
+   <div class="form-group">
+    {{form.email.label(class="form-control-label")}}<br>
+    
+    {% if form.email.errors %}
+    {%for error in form.email.errors%}
+    {{form.email(class="is-invalid input")}}
+    <div class="invalid-feedback">
+        <div>{{error}}</div><br>
+    </div>
+    {% endfor %}
+    {% else %}
+    {{form.email(class="input")}}<br><br>
+    {%endif%}
+
+<div class="form-group">
+    {{form.phone.label(class="form-control-label")}}<br>
+    
+    {% if form.phone.errors %}
+    {%for error in form.phone.errors%}
+    {{form.phone(class="is-invalid input")}}
+    <div class="invalid-feedback">
+        <div>{{error}}</div><br>
+    </div>
+    {% endfor %}
+    {% else %}
+    {{form.phone(class="input")}}<br><br>
+    {%endif%}
+
+</div>
+   <div class="form-group">
+    {{form.password.label(class="form-control-label")}}<br>
+    {% if form.password.errors %}
+    {%for error in form.password.errors%}
+    {{form.password(class="is-invalid input")}}
+    <div class="invalid-feedback">
+        <div>{{error}}</div><br>
+    </div>
+    {% endfor %}
+    {% else %}
+    {{form.password(class="input")}}<br><br>
+    {%endif%}
+</div>
+<div class="form-group">
+    {{form.confirmpassword.label(class="form-control-label")}}<br>
+    {% if form.confirmpassword.errors %}
+    {%for error in form.confirmpassword.errors%}
+    {{form.confirmpassword(class="is-invalid input")}}
+    <div class="invalid-feedback">
+        <div>{{error}}</div><br>
+    </div>
+    {% endfor %}
+    {% else %}
+    {{form.confirmpassword(class="input")}}<br><br>
+    {%endif%}
+</div>
+    </fieldset>
+    <div class="flex">
+    <div class="flex">
+    {{form.submit(class="btn btn-primary")}}</div>
+</div>
+    
+</form>
+
+{% endblock content %}

@@ -1,0 +1,62 @@
+{% extends "login.html" %}
+{% block content%}
+{% if(message)%}
+<div class="container"><h3>{{message}}</h3></div>
+{% else %}
+<table class="table color">
+    <th>
+        LOCATION_ID
+    </th>
+    <th>
+        LOCATION_NAME
+    </th>
+    <th>
+        PRODUCT_ID
+    </th>
+    <th>
+        PRODUCT_NAME
+    </th>
+    <th>
+        QUANTITY
+    </th>
+    {% for i in range(0,len)%}
+       <tr>
+           <td>
+               {{li1[i]}}
+           </td>
+           <td>
+            {{li2[i]}}
+           </td>
+           <td>
+           {%for j in li5[i]%}
+                        <div>{{j}}</div>
+                        <hr>
+           {%endfor%}
+           </td>
+           <td>
+           {%for j in li3[i]%}
+                    <div>{{j}}</div>
+                    <hr>
+           {%endfor%}
+           </td>
+           <td>
+           {%for j in li4[i]%}
+           
+                        <div>{{j}}</div>
+                        <hr>
+                   
+           {%endfor%}
+           </td>
+       </tr>
+       {%endfor%}
+
+</table>
+{%endif%}
+<div class="flex">
+<div class="flex1"><a class="btn btn-primary" href="{{url_for('first')}}">Back</a></div>
+{% if(li1)%}
+<div class="flex1"><a class="btn btn-primary" href="{{url_for('edit')}}">Edit</a></div>
+<div class="flex1"><a class="btn btn-primary" href="{{url_for('delete')}}">Delete</a></div>
+{%endif%}
+</div>
+{% endblock %}
