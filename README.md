@@ -5,13 +5,9 @@
 # Visuals
 * Login Page
 ![Login Page](/images/login.png)
-<br />
-* SignUp Page
-<br />
-![SignUp Page](/images/SignUp.png)
-<br />
-* Home Page
-<br />
+* SignUp Page/
+![SignUp Page](/images/SignUp.png)/
+* Home Page/
 ![Home Page](/images/home.png)
 <br />
 * ADD page
