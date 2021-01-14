@@ -14,12 +14,12 @@
 * Make Movement Page
 ![Make Movement Page](/images/move.png)
 * View Product Page
-![View Product Page](/images/View product.png)
+![View Product Page](/images/viewp.png)
 * View Location Page
 ![View Location Page](/images/viewl.png)
 * View Movement Page
-![View Movement Page](/images/View Movement.png)
+![View Movement Page](/images/viewm.png)
 * View Report Page
-![View Report Page](/images/View Report.png)
+![View Report Page](/images/viewr.png)
  
  
