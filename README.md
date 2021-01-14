@@ -3,4 +3,4 @@
 # Overview
    Maintain your inventory effectively & efficiently. Get reports on inventory inward and outward movements and make profitable decisions.
 # Options
-  *Login
+  * Login
